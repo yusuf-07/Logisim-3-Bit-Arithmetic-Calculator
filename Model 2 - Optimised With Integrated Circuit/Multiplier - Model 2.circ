@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </tool>
+    <tool name="Pin">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Probe">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Pull Resistor">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Clock">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Constant">
+      <a name="facing" val="north"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1">
+    <tool name="AND Gate">
+      <a name="inputs" val="6"/>
+    </tool>
+    <tool name="NAND Gate">
+      <a name="inputs" val="6"/>
+    </tool>
+    <tool name="NOR Gate">
+      <a name="inputs" val="6"/>
+    </tool>
+  </lib>
+  <lib desc="#Plexers" name="2">
+    <tool name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="width" val="4"/>
+    </tool>
+    <tool name="Demultiplexer">
+      <a name="select" val="3"/>
+      <a name="width" val="3"/>
+    </tool>
+    <tool name="Decoder">
+      <a name="facing" val="west"/>
+      <a name="select" val="4"/>
+    </tool>
+  </lib>
+  <lib desc="#Arithmetic" name="3">
+    <tool name="Subtractor">
+      <a name="width" val="5"/>
+    </tool>
+  </lib>
+  <lib desc="#Memory" name="4">
+    <tool name="D Flip-Flop">
+      <a name="trigger" val="high"/>
+    </tool>
+    <tool name="Counter">
+      <a name="width" val="4"/>
+      <a name="max" val="0xf"/>
+    </tool>
+    <tool name="Shift Register">
+      <a name="length" val="4"/>
+    </tool>
+    <tool name="RAM">
+      <a name="addrWidth" val="4"/>
+      <a name="dataWidth" val="4"/>
+      <a name="bus" val="asynch"/>
+    </tool>
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif bold 16"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <lib desc="file#C:\Users\yabul\OneDrive\Desktop\7400-lib.circ" name="7"/>
+  <lib desc="file#C:\Users\yabul\OneDrive\Desktop\Adder_Subtractor - Model 2.circ" name="8"/>
+  <main name="Multiplier"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif bold 16"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="labelloc" val="north"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="south"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="Multiplier">
+    <a name="circuit" val="Multiplier"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(280,170)" to="(340,170)"/>
+    <wire from="(270,140)" to="(270,210)"/>
+    <wire from="(310,230)" to="(310,360)"/>
+    <wire from="(150,290)" to="(150,300)"/>
+    <wire from="(220,220)" to="(340,220)"/>
+    <wire from="(110,240)" to="(290,240)"/>
+    <wire from="(250,120)" to="(430,120)"/>
+    <wire from="(110,270)" to="(160,270)"/>
+    <wire from="(320,280)" to="(320,300)"/>
+    <wire from="(110,220)" to="(220,220)"/>
+    <wire from="(200,160)" to="(440,160)"/>
+    <wire from="(350,330)" to="(350,480)"/>
+    <wire from="(190,370)" to="(430,370)"/>
+    <wire from="(180,380)" to="(420,380)"/>
+    <wire from="(450,150)" to="(450,180)"/>
+    <wire from="(260,130)" to="(260,350)"/>
+    <wire from="(370,190)" to="(470,190)"/>
+    <wire from="(200,230)" to="(200,320)"/>
+    <wire from="(110,300)" to="(150,300)"/>
+    <wire from="(450,60)" to="(450,150)"/>
+    <wire from="(300,190)" to="(340,190)"/>
+    <wire from="(300,190)" to="(300,280)"/>
+    <wire from="(300,310)" to="(530,310)"/>
+    <wire from="(250,120)" to="(250,340)"/>
+    <wire from="(530,310)" to="(530,480)"/>
+    <wire from="(270,140)" to="(430,140)"/>
+    <wire from="(310,230)" to="(340,230)"/>
+    <wire from="(430,210)" to="(430,370)"/>
+    <wire from="(420,220)" to="(420,380)"/>
+    <wire from="(110,320)" to="(200,320)"/>
+    <wire from="(460,320)" to="(460,480)"/>
+    <wire from="(370,230)" to="(400,230)"/>
+    <wire from="(260,130)" to="(470,130)"/>
+    <wire from="(110,350)" to="(260,350)"/>
+    <wire from="(440,160)" to="(440,200)"/>
+    <wire from="(110,250)" to="(190,250)"/>
+    <wire from="(290,290)" to="(300,290)"/>
+    <wire from="(110,340)" to="(250,340)"/>
+    <wire from="(130,110)" to="(130,290)"/>
+    <wire from="(470,130)" to="(470,190)"/>
+    <wire from="(110,260)" to="(180,260)"/>
+    <wire from="(370,170)" to="(500,170)"/>
+    <wire from="(150,290)" to="(280,290)"/>
+    <wire from="(160,300)" to="(290,300)"/>
+    <wire from="(400,230)" to="(400,480)"/>
+    <wire from="(600,300)" to="(600,480)"/>
+    <wire from="(280,330)" to="(350,330)"/>
+    <wire from="(370,200)" to="(440,200)"/>
+    <wire from="(280,200)" to="(340,200)"/>
+    <wire from="(370,210)" to="(430,210)"/>
+    <wire from="(180,260)" to="(180,330)"/>
+    <wire from="(260,60)" to="(260,130)"/>
+    <wire from="(200,160)" to="(200,230)"/>
+    <wire from="(190,360)" to="(190,370)"/>
+    <wire from="(370,220)" to="(420,220)"/>
+    <wire from="(290,300)" to="(290,320)"/>
+    <wire from="(300,290)" to="(300,310)"/>
+    <wire from="(430,120)" to="(430,140)"/>
+    <wire from="(290,320)" to="(460,320)"/>
+    <wire from="(110,310)" to="(220,310)"/>
+    <wire from="(220,220)" to="(220,310)"/>
+    <wire from="(300,150)" to="(300,180)"/>
+    <wire from="(280,170)" to="(280,200)"/>
+    <wire from="(300,180)" to="(340,180)"/>
+    <wire from="(160,270)" to="(160,300)"/>
+    <wire from="(500,80)" to="(500,170)"/>
+    <wire from="(240,60)" to="(240,280)"/>
+    <wire from="(210,360)" to="(310,360)"/>
+    <wire from="(210,360)" to="(210,520)"/>
+    <wire from="(110,230)" to="(200,230)"/>
+    <wire from="(300,280)" to="(320,280)"/>
+    <wire from="(280,60)" to="(280,170)"/>
+    <wire from="(130,110)" to="(410,110)"/>
+    <wire from="(190,250)" to="(190,360)"/>
+    <wire from="(280,290)" to="(280,330)"/>
+    <wire from="(110,290)" to="(130,290)"/>
+    <wire from="(320,300)" to="(600,300)"/>
+    <wire from="(300,150)" to="(450,150)"/>
+    <wire from="(180,330)" to="(180,380)"/>
+    <wire from="(110,360)" to="(190,360)"/>
+    <wire from="(410,60)" to="(410,110)"/>
+    <wire from="(370,180)" to="(450,180)"/>
+    <wire from="(290,240)" to="(290,290)"/>
+    <wire from="(430,60)" to="(430,120)"/>
+    <wire from="(110,330)" to="(180,330)"/>
+    <wire from="(270,210)" to="(340,210)"/>
+    <wire from="(110,280)" to="(240,280)"/>
+    <comp lib="6" loc="(639,25)" name="Text">
+      <a name="text" val="Comment: This is the Multiplier Circuit"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(450,60)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val=" B0"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(210,520)" name="Ground"/>
+    <comp lib="0" loc="(410,60)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B2"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="6" loc="(736,66)" name="Text">
+      <a name="text" val="presented at the right bottom of the circuit"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="0" loc="(350,480)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Sign"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="6" loc="(757,142)" name="Text">
+      <a name="text" val="are AND and which are XOR hoover over each node"/>
+      <a name="font" val="SansSerif bold 14"/>
+    </comp>
+    <comp lib="8" loc="(110,220)" name="Addition/Subtract"/>
+    <comp lib="0" loc="(430,60)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B1"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="6" loc="(805,122)" name="Text">
+      <a name="text" val="for optimisation, hoover over the node of each wire to know which"/>
+      <a name="font" val="SansSerif bold 14"/>
+    </comp>
+    <comp lib="0" loc="(260,60)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A1"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(600,480)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="label" val="P0"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(500,80)" name="Power"/>
+    <comp lib="0" loc="(400,480)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="label" val="P3"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="6" loc="(692,46)" name="Text">
+      <a name="text" val="Comment: The ouputs are P0, P1, P2, P3 and SignBit"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp lib="7" loc="(370,170)" name="7408"/>
+    <comp lib="0" loc="(280,60)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A0"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(240,60)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A2"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(530,480)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="label" val="P1"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(460,480)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="label" val="P2"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="6" loc="(742,103)" name="Text">
+      <a name="text" val="Comment: There are empty gates at the Add/Sub circuit we've used it"/>
+      <a name="font" val="SansSerif bold 14"/>
+    </comp>
+  </circuit>
+</project>
